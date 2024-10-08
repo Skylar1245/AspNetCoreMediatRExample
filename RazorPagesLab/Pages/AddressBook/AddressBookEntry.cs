@@ -4,7 +4,10 @@ namespace RazorPagesLab.Pages.AddressBook;
 
 public class AddressBookEntry : IEntity
 {
-	private AddressBookEntry(string line1, string city, string state, string postalCode)
+    // Parameterless constructor, added to allow model binding
+    public AddressBookEntry() { }
+
+    private AddressBookEntry(string line1, string city, string state, string postalCode)
 	{
 		Id = Guid.NewGuid();
 		Line1 = line1;

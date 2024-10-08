@@ -1,5 +1,7 @@
 # Razor Pages & MediatR Lab Exercise
 
+Solution written by Skylar Stephens.
+
 This is the beginnings of a crude address book application using ASP.NET Core and the MediatR library. I have the create and list actions coded. Please finish the edit & remove actions. Use the links for help and the create action as an example. You'll find the existing code in the /Pages/AddressBook folder.
 
 - Goals:

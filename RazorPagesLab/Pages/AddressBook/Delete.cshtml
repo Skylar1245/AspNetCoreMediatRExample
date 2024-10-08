@@ -1,0 +1,17 @@
+﻿@page
+@model RazorPagesLab.Pages.AddressBook.DeleteModel
+@{
+    ViewData["Title"] = "Delete Address Book Entry";
+}
+@* Added for the deletion confirmation page *@
+<h1>Delete Entry</h1>
+
+<p>Are you sure you want to delete the address book entry for <strong>@Model.Entry.Line1</strong>?</p>
+
+<form method="post">
+    <span asp-for="DeleteAddressRequest.Id"></span>
+    <input asp-for="DeleteAddressRequest.Id"
+           type="hidden" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-page="Index" class="btn btn-secondary">Cancel</a>
+</form>
